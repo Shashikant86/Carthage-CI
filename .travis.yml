@@ -12,5 +12,6 @@ before_install:
   - gem install fastlane --no-ri --no-rdoc --no-document
 
 install: true
-script: script/intelligent-bootstrap
-script: fastlane scan -s Carthage-CI
+script: 
+  - script/intelligent-bootstrap
+  - fastlane scan -s Carthage-CI
